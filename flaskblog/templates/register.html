@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="content-section">
+        {% for field, errors in form.errors.items() %}
+        {{ ', '.join(errors) }}
+        {% endfor %}
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
