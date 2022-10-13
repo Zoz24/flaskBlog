@@ -5,6 +5,6 @@ py -3 -m venv .venv
 .venv\scripts\activate 
 flask --app flaskblog.py run
 flask --app flaskblog.py --debug run
-$env:FLASK_APP = "flaskblog"
+$env:FLASK_APP = "run"
 python -m flask run
 </p>
